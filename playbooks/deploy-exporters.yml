@@ -1,0 +1,14 @@
+---
+- hosts: all
+
+  become: true
+  tasks:
+    - name: install node-exporter
+      roles:
+      - node-exporter
+    - name: install python
+      roles:
+      - python
+    - name: install mysql-exporter
+      roles:
+      - mysql-exporter
